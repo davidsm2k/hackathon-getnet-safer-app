@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context=".MenuDeOpcoesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_activity_menu_de_opcoes_opcoes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@string/padraoFonte"
+            android:text="Opções:"
+            android:textAlignment="center"
+            android:textColor="@color/colorTextRed"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ImageButton
+                    android:id="@+id/ib_activity_menu_de_opcoes_validacao"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/validacao"
+                    android:clickable="true" />
+
+                <TextView
+                    android:id="@+id/txt_activity_menu_de_opcoes_validacao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ib_activity_menu_de_opcoes_validacao"
+                    android:layout_marginLeft="15dp"
+                    android:text="Validação"
+                    android:textSize="10sp"/>
+
+                <ImageButton
+                    android:id="@+id/ib_activity_menu_de_opcoes_aprender_a_empreender"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_toEndOf="@id/ib_activity_menu_de_opcoes_validacao"
+                    android:background="@drawable/form"
+                    android:clickable="true" />
+
+                <TextView
+                    android:id="@+id/txt_activity_menu_de_opcoes_aprender_a_empreender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ib_activity_menu_de_opcoes_aprender_a_empreender"
+                    android:layout_marginLeft="40dp"
+                    android:layout_toEndOf="@+id/txt_activity_menu_de_opcoes_validacao"
+                    android:textSize="10sp"
+                    android:text="Aprender a Empreender" />
+
+                <ImageButton
+                    android:id="@+id/ib_activity_menu_de_opcoes_pagamento"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_toEndOf="@+id/ib_activity_menu_de_opcoes_aprender_a_empreender"
+                    android:background="@drawable/pagamento"
+                    android:clickable="true" />
+
+                <TextView
+                    android:id="@+id/txt_activity_menu_de_opcoes_pagamento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ib_activity_menu_de_opcoes_pagamento"
+                    android:layout_marginLeft="25dp"
+                    android:layout_toEndOf="@+id/txt_activity_menu_de_opcoes_aprender_a_empreender"
+                    android:text="Pagamento"
+                    android:textSize="10sp"/>
+
+
+
+                <ImageButton
+                    android:id="@+id/ib_activity_menu_de_opcoes_transferencia"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toEndOf="@id/ib_activity_menu_de_opcoes_pagamento"
+                    android:background="@drawable/transferencia"
+                    android:clickable="true" />
+
+                <TextView
+                    android:id="@+id/txt_activity_menu_de_opcoes_transferencia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ib_activity_menu_de_opcoes_transferencia"
+                    android:layout_marginLeft="45dp"
+                    android:layout_toEndOf="@+id/txt_activity_menu_de_opcoes_pagamento"
+                    android:text="Transfência"
+                    android:textSize="10sp"/>
+
+            </RelativeLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/txt_activity_menu_de_opcoes_extrato"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@string/padraoFonte"
+            android:text="Extrato:"
+            android:textAlignment="center"
+            android:textColor="@color/colorTextRed"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/corLinhaTabela" />
+
+                    <TableRow
+                        android:id="@+id/tr_activity_menu_de_opcoes_tabela_linha1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@string/padraoFonte"
+                            android:text="#"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@string/padraoFonte"
+                            android:text="DATA MOV."
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@string/padraoFonte"
+                            android:text="NR / DOC"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@string/padraoFonte"
+                            android:text="HISTÓRICO"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@string/padraoFonte"
+                            android:text="VALOR"
+                            android:textSize="14sp" />
+                    </TableRow>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/corLinhaTabela" />
+
+                    <TableRow
+                        android:id="@+id/tr_activity_menu_de_opcoes_tabela_linha2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@string/padraoFonte"
+                            android:text="1"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@string/padraoFonte"
+                            android:text="10/10/2020"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@string/padraoFonte"
+                            android:text="286731"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@string/padraoFonte"
+                            android:text="DEB. JUROS"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@string/padraoFonte"
+                            android:text="1.704,60 D"
+                            android:textColor="@color/colorTextRed"
+                            android:textSize="14sp" />
+                    </TableRow>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/corLinhaTabela" />
+
+                    <TableRow
+                        android:id="@+id/tr_activity_menu_de_opcoes_tabela_linha3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@string/padraoFonte"
+                            android:text="2"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@string/padraoFonte"
+                            android:text="05/09/2020"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@string/padraoFonte"
+                            android:text="214585"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@string/padraoFonte"
+                            android:text="CRED. TEV"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@string/padraoFonte"
+                            android:text="5.000,00"
+                            android:textColor="@color/colorTextGreen"
+                            android:textSize="14sp" />
+                    </TableRow>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/corLinhaTabela" />
+
+                    <TableRow
+                        android:id="@+id/tr_activity_menu_de_opcoes_tabela_linha4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@string/padraoFonte"
+                            android:text="3"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@string/padraoFonte"
+                            android:text="30/01/2020"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@string/padraoFonte"
+                            android:text="286481"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@string/padraoFonte"
+                            android:text="DEB. JUROS"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@string/padraoFonte"
+                            android:text="2.704,60 D"
+                            android:textColor="@color/colorTextRed"
+                            android:textSize="14sp" />
+                    </TableRow>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/corLinhaTabela" />
+
+                    <TableRow
+                        android:id="@+id/tr_activity_menu_de_opcoes_tabela_linha5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@string/padraoFonte"
+                            android:text="4"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@string/padraoFonte"
+                            android:text="30/01/2020"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@string/padraoFonte"
+                            android:text="134658"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@string/padraoFonte"
+                            android:text="DEB. JUROS"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@string/padraoFonte"
+                            android:text="780,72 D"
+                            android:textColor="@color/colorTextRed"
+                            android:textSize="14sp" />
+                    </TableRow>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/corLinhaTabela" />
+
+                    <TableRow
+                        android:id="@+id/tr_activity_menu_de_opcoes_tabela_linha6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@string/padraoFonte"
+                            android:text="5"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@string/padraoFonte"
+                            android:text="19/01/2020"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@string/padraoFonte"
+                            android:text="546237"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@string/padraoFonte"
+                            android:text="CRED. TEV"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@string/padraoFonte"
+                            android:text="1.837,54"
+                            android:textColor="@color/colorTextGreen"
+                            android:textSize="14sp" />
+                    </TableRow>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/corLinhaTabela" />
+
+                    <TableRow
+                        android:id="@+id/tr_activity_menu_de_opcoes_tabela_linha7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@string/padraoFonte"
+                            android:text="6"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@string/padraoFonte"
+                            android:text="14/12/2019"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@string/padraoFonte"
+                            android:text="172120"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@string/padraoFonte"
+                            android:text="DEB. JUROS"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@string/padraoFonte"
+                            android:text="473,35 D"
+                            android:textColor="@color/colorTextRed"
+                            android:textSize="14sp" />
+                    </TableRow>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/corLinhaTabela" />
+
+                    <TableRow
+                        android:id="@+id/tr_activity_menu_de_opcoes_tabela_linha8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@string/padraoFonte"
+                            android:text="7"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@string/padraoFonte"
+                            android:text="21/07/2019"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@string/padraoFonte"
+                            android:text="059153"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@string/padraoFonte"
+                            android:text="DEB. JUROS"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@string/padraoFonte"
+                            android:text="3.007,05 D"
+                            android:textColor="@color/colorTextRed"
+                            android:textSize="14sp" />
+                    </TableRow>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/corLinhaTabela" />
+
+                    <TableRow
+                        android:id="@+id/tr_activity_menu_de_opcoes_tabela_linha9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@string/padraoFonte"
+                            android:text="8"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@string/padraoFonte"
+                            android:text="04/03/2019"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@string/padraoFonte"
+                            android:text="315789"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@string/padraoFonte"
+                            android:text="CRED. TEV"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:fontFamily="@string/padraoFonte"
+                            android:text="1.343,97"
+                            android:textColor="@color/colorTextGreen"
+                            android:textSize="14sp" />
+                    </TableRow>
+                </TableLayout>
+            </HorizontalScrollView>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

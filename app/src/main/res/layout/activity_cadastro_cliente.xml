@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".CadastroClienteActivity">
+
+        <TextView
+            android:id="@+id/txt_activity_cadastro_cliente_texto_l1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E11818"
+            android:fontFamily="@string/padraoFonte"
+            android:text="Solicitar seu beneficio é muito simples !"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_activity_cadastro_cliente_texto_l2"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/txt_activity_cadastro_cliente_texto_l1"
+            android:background="#E11818"
+            android:fontFamily="@string/padraoFonte"
+            android:text="Comece preenchendo seus dados aqui e depois aguarde enquanto nossa equipe analisa os seus dados."
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_activity_cadastro_cliente_nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_activity_cadastro_cliente_texto_l2"
+            android:layout_margin="8dp"
+            android:fontFamily="@string/padraoFonte"
+            android:text="Nome:"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/activity_cadastro_cliente_nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_activity_cadastro_cliente_nome"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:fontFamily="@string/padraoFonte"
+            android:hint="Digite o seu nome completo"
+            android:inputType="textPersonName"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txt_activity_cadastro_cliente_cpf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_cadastro_cliente_nome"
+            android:layout_margin="8dp"
+            android:fontFamily="@string/padraoFonte"
+            android:text="CPF:"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/activity_cadastro_cliente_cpf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_activity_cadastro_cliente_cpf"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:fontFamily="@string/padraoFonte"
+            android:hint="Digite o seu CPF (Proprietário)"
+            android:inputType="number"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txt_activity_cadastro_cliente_senha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_cadastro_cliente_cpf"
+            android:layout_margin="8dp"
+            android:fontFamily="@string/padraoFonte"
+            android:text="Senha:"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/activity_cadastro_cliente_senha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_activity_cadastro_cliente_senha"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:fontFamily="@string/padraoFonte"
+            android:hint="Digite uma senha"
+            android:inputType="textPassword"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txt_activity_cadastro_cliente_confirmar_senha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_cadastro_cliente_senha"
+            android:layout_margin="8dp"
+            android:fontFamily="@string/padraoFonte"
+            android:text="Confirma Senha:"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/activity_cadastro_cliente_confirma_senha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_activity_cadastro_cliente_confirmar_senha"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:fontFamily="@string/padraoFonte"
+            android:hint="Digite a senha novamente"
+            android:inputType="textPassword"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txt_activity_cadastro_cliente_nome_estabelecimento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_cadastro_cliente_confirma_senha"
+            android:layout_margin="8dp"
+            android:fontFamily="@string/padraoFonte"
+            android:text="Nome Estabelecimento:"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/activity_cadastro_cliente_nome_estabelecimento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_activity_cadastro_cliente_nome_estabelecimento"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:fontFamily="@string/padraoFonte"
+            android:hint="Digite o nome do estabelecimento"
+            android:inputType="textPersonName"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txt_activity_cadastro_cliente_cnpj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_cadastro_cliente_nome_estabelecimento"
+            android:layout_margin="8dp"
+            android:fontFamily="@string/padraoFonte"
+            android:text="CNPJ:"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/activity_cadastro_cliente_cnpj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_activity_cadastro_cliente_cnpj"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:fontFamily="@string/padraoFonte"
+            android:hint="Digite o CNPJ"
+            android:inputType="number"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txt_activity_cadastro_cliente_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_cadastro_cliente_cnpj"
+            android:layout_margin="8dp"
+            android:fontFamily="@string/padraoFonte"
+            android:text="E-mail:"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/activity_cadastro_cliente_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_activity_cadastro_cliente_email"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@string/padraoFonte"
+            android:hint="Digite um e-mail"
+            android:inputType="textEmailAddress"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txt_activity_cadastro_cliente_contrato_aluguel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_cadastro_cliente_email"
+            android:layout_margin="8dp"
+            android:fontFamily="@string/padraoFonte"
+            android:text="Contrato do aluguel:"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_activity_cadastro_cliente_selecione_arquivo_contrato_aluguel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_activity_cadastro_cliente_contrato_aluguel"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/padrao_arredondado_button_vermelho"
+            android:fontFamily="@string/padraoFonte"
+            android:text="Selecione um arquivo"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/txt_activity_cadastro_cliente_contrato_aluguel_nome_arquivo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_activity_cadastro_cliente_contrato_aluguel"
+            android:layout_margin="10dp"
+            android:layout_toEndOf="@+id/btn_activity_cadastro_cliente_selecione_arquivo_contrato_aluguel"
+            android:hint="Nenhum arquivo selecionado" />
+
+        <TextView
+            android:id="@+id/txt_activity_cadastro_cliente_extrato_bancario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_activity_cadastro_cliente_selecione_arquivo_contrato_aluguel"
+            android:layout_margin="8dp"
+            android:fontFamily="@string/padraoFonte"
+            android:text="Extrato Bancario (Últimos 6 meses):"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_activity_cadastro_cliente_selecione_arquivo_extrato_bancario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_activity_cadastro_cliente_extrato_bancario"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/padrao_arredondado_button_vermelho"
+            android:fontFamily="@string/padraoFonte"
+            android:text="Selecione um arquivo"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/txt_activity_cadastro_cliente_extrato_bancario_nome_arquivo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_activity_cadastro_cliente_extrato_bancario"
+            android:layout_margin="10dp"
+            android:layout_toEndOf="@+id/btn_activity_cadastro_cliente_selecione_arquivo_extrato_bancario"
+            android:hint="Nenhum arquivo selecionado" />
+
+        <TextView
+            android:id="@+id/txt_activity_cadastro_cliente_notas_emitidas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_activity_cadastro_cliente_selecione_arquivo_extrato_bancario"
+            android:layout_margin="8dp"
+            android:fontFamily="@string/padraoFonte"
+            android:text="Notas Emitidas (Últimos 6 meses):"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_activity_cadastro_cliente_selecione_arquivo_notas_emitidas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_activity_cadastro_cliente_notas_emitidas"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/padrao_arredondado_button_vermelho"
+            android:fontFamily="@string/padraoFonte"
+            android:text="Selecione um arquivo"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/txt_activity_cadastro_cliente_notas_emitidas_nome_arquivo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_activity_cadastro_cliente_notas_emitidas"
+            android:layout_margin="10dp"
+            android:layout_toEndOf="@+id/btn_activity_cadastro_cliente_selecione_arquivo_notas_emitidas"
+            android:hint="Nenhum arquivo selecionado" />
+
+        <TextView
+            android:id="@+id/txt_activity_cadastro_cliente_comprovante_endereco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_activity_cadastro_cliente_selecione_arquivo_notas_emitidas"
+            android:layout_margin="8dp"
+            android:fontFamily="@string/padraoFonte"
+            android:text="Comprovante de Endereço:"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_activity_cadastro_cliente_selecione_arquivo_comprovante_endereco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_activity_cadastro_cliente_comprovante_endereco"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/padrao_arredondado_button_vermelho"
+            android:fontFamily="@string/padraoFonte"
+            android:text="Selecione um arquivo"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/txt_activity_cadastro_cliente_comprovante_endereco_nome_arquivo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_activity_cadastro_cliente_comprovante_endereco"
+            android:layout_margin="10dp"
+            android:layout_toEndOf="@+id/btn_activity_cadastro_cliente_selecione_arquivo_comprovante_endereco"
+            android:hint="Nenhum arquivo selecionado" />
+
+        <TextView
+            android:id="@+id/txt_activity_cadastro_cliente_holerite_funcionarios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_activity_cadastro_cliente_selecione_arquivo_comprovante_endereco"
+            android:layout_margin="8dp"
+            android:fontFamily="@string/padraoFonte"
+            android:text="Holerite dos Funcionários (Últimos 6 meses máximo de dois funcionarios):"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_activity_cadastro_cliente_selecione_arquivo_holerite_funcionario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_activity_cadastro_cliente_holerite_funcionarios"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/padrao_arredondado_button_vermelho"
+            android:fontFamily="@string/padraoFonte"
+            android:text="Selecione um arquivo"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/txt_activity_cadastro_cliente_holerite_funcionarios_nome_arquivo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_activity_cadastro_cliente_holerite_funcionarios"
+            android:layout_margin="10dp"
+            android:layout_toEndOf="@+id/btn_activity_cadastro_cliente_selecione_arquivo_holerite_funcionario"
+            android:hint="Nenhum arquivo selecionado" />
+
+        <Button
+            android:id="@+id/btn_activity_cadastro_cliente_enviar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_activity_cadastro_cliente_selecione_arquivo_holerite_funcionario"
+            android:background="@drawable/padrao_arrendondado_button_branco_border_vermelho"
+            android:fontFamily="@string/padraoFonte"
+            android:text="Enviar"
+            android:textColor="#B80404"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_centerInParent="true"/>
+
+        <Button
+            android:id="@+id/btn_activity_cadastro_cliente_voltar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_activity_cadastro_cliente_enviar"
+            android:background="@drawable/padrao_arrendondado_button_branco_border_vermelho"
+            android:fontFamily="@string/padraoFonte"
+            android:text="Voltar"
+            android:textColor="#B80404"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+</ScrollView>

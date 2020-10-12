@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".TransferenciaActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:fontFamily="@string/padraoFonte"
+            android:text="Transferência"
+            android:textColor="@color/colorTextRed"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="@color/corLinhaTabela" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_activity_transferencia_agencia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@string/padraoFonte"
+                android:text="Ag."
+                android:textColor="@color/colorTextRed" />
+
+            <TextView
+                android:id="@+id/txt_activity_transferencia_agencia_texto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_toEndOf="@+id/txt_activity_transferencia_agencia"
+                android:fontFamily="@string/padraoFonte"
+                android:text="3414"
+                android:textColor="@color/colorTextRed" />
+
+            <TextView
+                android:id="@+id/txt_activity_transferencia_conta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_toEndOf="@+id/txt_activity_transferencia_agencia_texto"
+                android:fontFamily="@string/padraoFonte"
+                android:text="C/C:"
+                android:textColor="@color/colorTextRed" />
+
+            <TextView
+                android:id="@+id/txt_activity_transferencia_conta_texto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_toEndOf="@+id/txt_activity_transferencia_conta"
+                android:fontFamily="@string/padraoFonte"
+                android:text="01.115614.8"
+                android:textColor="@color/colorTextRed" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_activity_transferencia_saldo_conta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Saldo da Conta Corrente (R$): "
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_activity_transferencia_saldo_conta_valor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/txt_activity_transferencia_saldo_conta"
+                android:text="50.000,00"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/colorTextRed"
+            android:fontFamily="@string/padraoFonte"
+            android:text="Enviar para"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/txt_activity_transferencia_instituicao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:fontFamily="@string/padraoFonte"
+            android:text="Instituição:"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/activity_transferencia_instituicao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:background="@drawable/padrao_arrendondado_button_branco_border_vermelho"
+            android:hint="0000"
+            android:inputType="number"
+            android:maxLength="4" />
+
+        <TextView
+            android:id="@+id/txt_activity_transferencia_tipo_conta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:fontFamily="@string/padraoFonte"
+            android:text="Tipo de Conta:"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/sp_activity_transferencia_tipo_conta"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:background="@drawable/padrao_arrendondado_button_branco_border_vermelho"
+            android:textIsSelectable="true" />
+
+        <TextView
+            android:id="@+id/txt_activity_transferencia_agencia_recebe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:fontFamily="@string/padraoFonte"
+            android:text="Agência:"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/activity_transferencia_agencia_recebe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:background="@drawable/padrao_arrendondado_button_branco_border_vermelho"
+            android:hint="0000"
+            android:inputType="number"
+            android:maxLength="4" />
+
+        <TextView
+            android:id="@+id/txt_activity_transferencia_conta_recebe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:fontFamily="@string/padraoFonte"
+            android:text="Conta:"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/activity_transferencia_conta_recebe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:background="@drawable/padrao_arrendondado_button_branco_border_vermelho"
+            android:hint="00.000000.0"
+            android:inputType="number"
+            android:maxLength="9" />
+
+        <TextView
+            android:id="@+id/txt_activity_transferencia_cpf_cnpj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:fontFamily="@string/padraoFonte"
+            android:text="CPF/CNPJ:"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/activity_transferencia_cpf_cnpj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:background="@drawable/padrao_arrendondado_button_branco_border_vermelho" />
+        
+        <TextView
+            android:id="@+id/txt_activity_transferencia_nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nome:"
+            android:textAlignment="center"
+            android:fontFamily="@string/padraoFonte"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/activity_transferencia_nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/padrao_arrendondado_button_branco_border_vermelho" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/colorTextRed"
+            android:fontFamily="@string/padraoFonte"
+            android:text="Dados da transação"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/txt_activity_transferencia_tipo_transacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@string/padraoFonte"
+            android:text="Tipo de Transação:"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_margin="8dp"/>
+
+        <Spinner
+            android:id="@+id/sp_activity_transferencia_tipo_transacao"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:background="@drawable/padrao_arrendondado_button_branco_border_vermelho"
+            android:textIsSelectable="true" />
+
+        <TextView
+            android:id="@+id/txt_activity_transferencia_valor_transacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@string/padraoFonte"
+            android:text="Valor R$:"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_margin="8dp"/>
+
+        <EditText
+            android:id="@+id/activity_transferencia_valor_transacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:background="@drawable/padrao_arrendondado_button_branco_border_vermelho"
+            android:hint="R$ 00,00"
+            android:inputType="number" />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Transferir Hoje"
+                android:fontFamily="@string/padraoFonte"
+                android:textSize="18sp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="10dp"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Agendar para:"
+                android:fontFamily="@string/padraoFonte"
+                android:textSize="18sp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="10dp"/>
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/activity_transferencia_data_transacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/padrao_arrendondado_button_branco_border_vermelho"
+            android:inputType="date"
+            android:maxLength="10"
+            android:hint="00/00/0000"/>
+
+        <Button
+            android:id="@+id/btn_activity_transferencia_confirmar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirmar"
+            android:background="@drawable/padrao_arredondado_button_vermelho"
+            android:textColor="#FFFFFF"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:id="@+id/btn_activity_transferencia_cancelar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancelar"
+            android:background="@drawable/padrao_arredondado_button_vermelho"
+            android:textColor="#FFFFFF"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+</ScrollView>

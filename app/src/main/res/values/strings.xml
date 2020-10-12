@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Safer</string>
+    <string name="padraoFonte">"@font/arimo_bold"</string>
+</resources>

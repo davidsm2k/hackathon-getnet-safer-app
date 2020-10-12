@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".AprenderAEmpreenderActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#B7BCB8">
+
+            <Button
+                android:id="@+id/btn_activity_aprender_a_empreender_voltar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/ic_action_voltar" />
+
+            <ImageView
+                android:id="@+id/iv_activity_aprender_a_empreender_titulo"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toEndOf="@+id/btn_activity_aprender_a_empreender_voltar"
+                android:background="@drawable/img_titulo_aprender_a_empreender" />
+
+            <TextView
+                android:id="@+id/activity_aprender_a_empreender_titulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_toEndOf="@+id/iv_activity_aprender_a_empreender_titulo"
+                android:fontFamily="@string/padraoFonte"
+                android:text="Aprender a Empreender"
+                android:textSize="24dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_activity_aprender_a_empreender_texto1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:fontFamily="@string/padraoFonte"
+            android:text="Neste bloco você vai aprender tudo o que você precisa para empreender:"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_activity_aprender_a_empreender_texto2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:fontFamily="@string/padraoFonte"
+            android:text="Conheça as principais características que um empreendedor deve ter e aprenda os conceitos básicos sobre empreendedorismo, marketing e finanças. Se você está querendo abrir um negócio ou se acabou de abrir este curso é para você!"
+            android:textAlignment="center"
+            android:textSize="10dp" />
+
+        <ImageButton
+            android:id="@+id/ib_activity_aprender_a_empreender_mercado"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/mercado"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"/>
+        <TextView
+            android:id="@+id/txt_activity_aprender_a_empreender_mercado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mercado"
+            android:textAlignment="center"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorTextRed"/>
+
+        <ImageButton
+            android:id="@+id/ib_activity_aprender_a_empreender_financas"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/financas"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:id="@+id/txt_activity_aprender_a_empreender_financas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Finanças"
+            android:textAlignment="center"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorTextRed"/>
+
+        <ImageButton
+            android:id="@+id/ib_activity_aprender_a_empreender_empreendendo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/empreender"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:id="@+id/txt_activity_aprender_a_empreender_empreendendo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Empreendendo"
+            android:textAlignment="center"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorTextRed"/>
+
+    </LinearLayout>
+</ScrollView>
